@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>实验室实训中心</title>
+
+  <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/list_forms.css" media="all">
+</head>
+
+<body>
+
+  <!-- 你的HTML代码 -->
+  <!-- 头部 -->
+
+   <!-- 头部：标题+返回键 -->
+<div class="app_header">
+    <a href="#" class="back_btn"><i class="layui-icon  layui-icon-left"></i></a>
+    <a href="" class="title">表单编号</a>
+</div>
+<!-- 按钮：审批+历史 -->
+<div class="app_middle">
+    <div class="app_btn">
+        <a href="experimental-training-center.html" class="fill_btn">填报</a>
+        <a href="list_forms.html" class="hty_btn">列表</a>
+    </div>
+</div>
+<div class="formtype">
+    <input type="text" name="" id=""  placeholder="搜索表单" class="searchform">
+
+    <span class="layui-icon layui-icon-search "></span>
+    <select name="city" lay-verify="" class="allform" >
+        <option value="全部类型">全部类型</option>
+        <option value="实验室借用表单">实验室借用表单</option>
+        <option value="实验室仪器设备借用">实验室仪器设备借用</option>
+        <option value="开放实验室">开放实验室</option>
+        <option value="期末检查记录表">期末检查记录表</option>
+      </select> 
+      <select name="" lay-verify="" class="status">
+        <option value="所有状态">所有状态</option>
+        <option value="审批中">审批中</option>
+        <option value="审批未通过">审批未通过</option>
+        <option value="通过审批">通过审批</option>
+      </select>         
+</div>
+<div class="forminformation">
+    <form action="">
+        <div class="layui-form">
+            <table class="layui-table">
+              <colgroup>
+                <col width="100">
+                <col width="300">
+                <col width="150">
+                <col >
+              </colgroup>
+              <thead style="text-align: center;">
+                <tr>
+                  <th>表单编号</th>
+                  <th>表单类型</th>
+                  <th>审批中</th>
+                  <th>操作</th>
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>
+                  <td>101010</td>
+                  <td>实验室仪器设备借用</td>
+                  <td><span class="nopass">不通过</span></td>
+                  <td><a href="Form_view_lab.html"><span class="layui-btn layui-btn-radius layui-btn-normal layui-btn-xs chakan">查看</span></a></td>
+                </tr>
+                <tr>
+                    <td>101010</td>
+                    <td>实验室仪器设备借用</td>
+                    <td><span class="pass">通过</span></td>
+                    <td><span class="layui-btn layui-btn-radius layui-btn-normal layui-btn-xs chakan">查看</span></td>
+                  </tr>
+                  <tr>
+                    <td>101010</td>
+                    <td>实验室仪器设备借用</td>
+                    <td><span class="approval">审批中</span></td>
+                    <td><span class="layui-btn layui-btn-radius layui-btn-normal layui-btn-xs chakan">查看</span></td>
+                  </tr>
+                  <tr>
+                    <td>101010</td>
+                    <td>实验室仪器设备借用</td>
+                    <td>已通过</td>
+                    <td><span class="layui-btn layui-btn-radius layui-btn-normal layui-btn-xs chakan">查看</span></td>
+                  </tr>
+               
+              </tbody>
+            </table>
+          </div>
+    </form>
+</div>
+
+
+</div>
+
+  <!-- js的引用 -->
+  <script src="../layui/layui.all.js"></script>
+  <script src="../layui/lay/modules/jquery.js"></script>
+  <script src="../js/test.js"></script>
+</body>
+
+</html>
